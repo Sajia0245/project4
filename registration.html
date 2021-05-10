@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-header">
+            <div class="logo">
+                <img src="images/logo.jpeg">
+            </div>
+        </div>
+
+        <div class="nav">
+            <ul class="nav-links">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="registration.html" class="nav-link">Registration</a></li>
+                <li class="nav-item"><a href="contactus.html" class="nav-link">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="formcontainer">
+    <form action="#" method="post" name="myForm" onsubmit="return validateForm()">
+        <h1>User Registration</h1>
+        <br>
+        <label for="fullname"><b>Full Name</b></label>
+        <input id="fullname" type="text">
+
+        <label for="email"><b>Email</b></label>
+        <input id="email" type="text">
+
+        <label for="password"><b>Password</b></label>
+        <input id="password" type="text">
+
+        <label for="phone"><b>Phone</b></label>
+        <input id="phone" type="text">
+
+        <label for="organization"><b>Organization</b></label>
+        <input id="organization" type="text">
+
+        <label for="country"><b>Country</b></label>
+        <select name="country" id="country">
+            <option></option>
+            <option value="US">US</option>
+            <option value="UK">UK</option>
+        </select>
+        <p style="font-weight: bold">Registration type</p>
+        <input type="radio" id="author"  value="author">
+        <label for="author">Author</label><br>
+        <input type="radio" id="participant"  value="author">
+        <label for="participant">Participant</label><br>
+        <input type="radio" id="student"  value="author">
+        <label for="student">Student</label><br>
+        <br>
+        <label for="discount"><b>Discount</b></label>
+        <input id="discount" type="number">
+
+        <ul id="error"></ul>
+
+        <button class="registerbtn" type="submit">Register</button>
+    </form>
+</div>
+<div class="footer">
+    <p>15-16 July 2021
+        Lehman College 1St International Conference in Cloud Computing
+        Bronx, NY</p>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
